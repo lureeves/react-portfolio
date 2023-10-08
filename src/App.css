@@ -1,0 +1,144 @@
+/* Global styles for the body */
+body {
+    background-color: #99A98F;  /* Light grey background color */
+    overflow-x: hidden;  /* Prevents any horizontal scrolling */
+    margin: 0;  /* Resets any browser-default margin */
+    padding: 0;  /* Resets any browser-default padding */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling for the hero section, which is typically the large banner area near the top of the page */
+.hero-section {
+    height: calc(100vh - 56px - 1rem);  /* Calculates the viewport height minus the navbar and a small margin */
+    display: flex;  /* Uses flexbox for centering content vertically and horizontally */
+    align-items: center;  /* Centers content vertically */
+    justify-content: center;  /* Centers content horizontally */
+    flex-direction: column;  /* Stacks children elements (like h1, p) on top of each other */
+}
+
+/* Global typography styles for h1 and p tags */
+h1, p {
+    font-family: Lora, sans-serif;  /* Specifies font family with fallback */
+    color: black;  /* Text color */
+}
+
+/* Specific styling for h1 tags */
+h1 {
+    font-size: 3.5rem;  /* Larger font size for headers */
+}
+
+/* Container to wrap content and center it */
+.content-wrapper {
+    max-width: 800px;  /* Maximum width for the content inside */
+    margin: 0 auto;  /* Horizontally centers the content-wrapper */
+    padding: 0 15px;  /* Adds padding to left and right side */
+    text-align: center;  /* Centers text and inline-level elements */
+}
+
+/* Styling for custom buttons */
+.custom-btn {
+    background-color: #FFF8DE;
+    border: none;
+    color: #000000;  /* White text color */
+    padding: 10px 25px;  /* Padding around the text */
+    border-radius: 0px;  /* Flat button style with no rounded edges */
+    cursor: pointer;  /* Shows a hand cursor when hovering over the button */
+    transition: all 0.3s ease;  /* Smooth transition effect for hover and active states */
+    font-weight: 600;  /* Bold font weight */
+    font-size: 1rem;  /* Font size for the text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow for a lifted look */
+    outline: none;  /* Removes the default browser focus outline */
+}
+
+/* Hover effect for the custom button */
+.custom-btn:hover {
+    background-color: #FFFAEF;  /* Darkens the button on hover */
+
+}
+
+/* Active (or "pressed") state for the custom button */
+.custom-btn:active {
+    transform: translateY(1px);  /* Gives the impression the button is being pressed down */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Adjusts shadow to reflect the pressed state */
+}
+
+
+/* Style for the Cards */
+.card {
+    /* Coloring card */
+    background: linear-gradient(135deg, #FFF8DE, #deffd6); /* Gradient background */
+    border-radius: 0px; /* Rounded corners */
+    overflow: hidden; /* Ensures content inside the card doesn't spill out of the rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted look */
+    
+    /* Centering image */
+    display: flex;           /* Set the card to be a flex container */
+    flex-direction: column;  /* Stack children elements (like img, card-body) on top of each other */
+    align-items: center;     /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: 100%;            /* Take full height of its container */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scales the card on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    background: rgba(0, 0, 0, 0.7); /* Change the card's background to solid black */
+    
+}
+
+.card img {
+    width: 90%; /* Ensures the image takes up the full width of the card */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Ensures there are no gaps around the image */
+    margin: 0 auto; /* Horizontally centers the image if it's narrower than the card */
+}
+
+.card:hover img {
+    opacity: 0.3; /* Adjust this value as desired, where 1 is fully opaque and 0 is fully transparent */
+}
+
+.card-body {
+    padding: 20px; /* Adds some space inside the card */
+}
+
+.card-link-wrapper {
+    text-decoration: none; /* Removes the underline from the link */
+    color: inherit; /* Inherits the color from the parent, so the text doesn't turn blue or purple */
+    display: block; /* Makes the anchor tag block-level, so it takes up the full space of the parent */
+}
+
+
+/* Styles for the tooltip */
+.tooltip {
+    position: absolute; /* Absolute positioning to place it over the card */
+    top: 0; /* Align to the top of the card */
+    left: 0; /* Align to the left of the card */
+    width: 100%; /* Cover the full width of the card */
+    height: 100%; /* Cover the full height of the card */
+    color: #fff; /* White text */
+    display: flex; /* Use flexbox to center the text vertically and horizontally */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for fading in/out */
+    font-size: 1.5rem;  /* Adjust this value as desired. 1.5rem is just an example. */
+}
+
+.card:hover .tooltip {
+    opacity: 1; /* Display the tooltip when the card is hovered over */
+}
+
+
+
+/* Styles for the footer */
+footer {
+    position: static;  /* Positions the footer at a static spot on the page */
+    bottom: 0;  /* Aligns the footer to the bottom of the viewport */
+    left: 0;  /* Aligns the footer to the left side of the viewport */
+    width: 100%;  /* Ensures the footer spans the entire width of the viewport */
+    z-index: 10;  /* Ensures the footer appears on top of other content if they overlap */
+}

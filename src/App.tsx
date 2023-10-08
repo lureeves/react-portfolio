@@ -1,19 +1,49 @@
-// import React from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import ProjectsSection from './components/ProjectsSection';
 import Footer from './components/Footer';
-// import '/src/App.css';
+import './App.css';
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <HeroSection />
-      <ProjectsSection />
-      <Footer />
-    </div>
-  );
+    const [joke, setJoke] = useState({ category: '', setup: '', delivery: '' });
+
+    // Function to fetch a joke
+    const fetchJoke = async () => {
+        try {
+            const response = await fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,sexist,explicit&type=twopart');
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            const data = await response.json();
+            setJoke({
+                category: data.category,
+                setup: data.setup,
+                delivery: data.delivery
+            });
+        } catch (error) {
+            console.error('Error fetching Joke:', error);
+            // Handle error (e.g., set some state to show an error message)
+        }
+    };
+
+    return (
+        <div className="App">
+            <Navbar />
+            <div id="hero">
+                <h1>Hero section</h1>
+            </div>
+            <div id="joke_generator">
+                <button onClick={fetchJoke}>Generate Joke</button>
+                <p>{`Category: ${joke.category}`}</p>
+                <p>{joke.setup}</p>
+                <p>{joke.delivery}</p>
+            </div>
+            <div id="about_me">
+                {/* Content for About Me section */}
+            </div>
+            <div id="projects">
+                {/* Content for Projects section */}
+            </div>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
