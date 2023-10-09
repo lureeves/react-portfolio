@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -26,10 +27,10 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <div id="hero">
-                <h1>Hero section</h1>
-            </div>
-            <div id="joke_generator">
+            
+            <HeroSection />
+
+            <div id="joke_generator" className="bg-light">
                 <button onClick={fetchJoke}>Generate Joke</button>
                 <p>{`Category: ${joke.category}`}</p>
                 <p>{joke.setup}</p>

@@ -3,7 +3,7 @@ import '../App.css';
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-white">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" >
             <div className="container-fluid">
 
                 {/* Brand (currently empty, could be used for a logo or brand name) */}
