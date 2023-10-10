@@ -7,11 +7,11 @@ import './App.css';
 
 function App() {
     return (
-        <div className="App">
+        <div className="App bg-light">
             <Navbar />
 
             <HeroSection />
-            
+
             <JokeGenerator /> 
 
             <div id="about_me">
