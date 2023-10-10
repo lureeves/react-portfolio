@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
     return (
-        <div className="App bg-light">
+        <div className="App">
             <Navbar />
 
             <HeroSection />

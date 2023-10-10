@@ -1,1 +1,6 @@
 /* Specific styles for the main page */
+
+body {
+    /* Important to overide exisiting bootstrap css */
+    background-color: #e5e5f7 !important;
+}
