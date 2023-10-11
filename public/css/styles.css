@@ -1,20 +1,75 @@
 /* Global styles for the body */
 
+/* background pattern for whole page*/
+body {
+    background-image: radial-gradient(rgba(72, 90, 255, 0.5) 1px, #e5e5f7 1px);
+    background-size: 19px 19px;
+}
+
+
 /* Hero Section */
+
+/* Intro */
 .gradient-text {
     /* Define the linear gradient background */
     background: linear-gradient(to right, #5ebeff, #ffcc35);
-    
     /* Apply the background to only the text */
     -webkit-background-clip: text;
     background-clip: text;
-    
     /* Make the text transparent so the background shows */
     color: transparent;
 }
 
-body {
-    background-color: #ffffff;
-    background-image: radial-gradient(rgba(72, 90, 255, 0.5) 0.9500000000000001px, #e5e5f7 0.9500000000000001px);
-    background-size: 19px 19px;
+/* Styling for the hero section, which is typically the large banner area near the top of the page */
+.hero-section {
+    height: calc(100vh - 56px - 1rem);  /* Calculates the viewport height minus the navbar and a small margin */
+    display: flex;  /* Uses flexbox for centering content vertically and horizontally */
+    align-items: center;  /* Centers content vertically */
+    justify-content: center;  /* Centers content horizontally */
+    flex-direction: column;  /* Stacks children elements (like h1, p) on top of each other */
+}
+
+/* Global typography styles for h1 and p tags */
+h1, p {
+    font-family: Lora, sans-serif;  /* Specifies font family with fallback */
+    color: black;  /* Text color */
+}
+
+/* Specific styling for h1 tags */
+h1 {
+    font-size: 3.5rem !important;  /* Larger font size for headers */
+}
+
+.word {
+    animation: fadeInOut 3s infinite;
+    display: inline-block;
+    width: 100px;
+    text-align: left; 
+}
+
+
+/* Styling for custom buttons */
+.custom-btn {
+    background-color: #9999e8;
+    border: none;
+    color: white;  /* Text color */
+    padding: 17px 30px;  /* Padding around the text */
+    border-radius: 0px;  /* Flat button style with no rounded edges */
+    cursor: pointer;  /* Shows a hand cursor when hovering over the button */
+    transition: all 0.3s ease;  /* Smooth transition effect for hover and active states */
+    font-weight: 600;  /* Bold font weight */
+    font-size: 1rem;  /* Font size for the text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow for a lifted look */
+    outline: none;  /* Removes the default browser focus outline */
+}
+
+/* Hover effect for the custom button */
+.custom-btn:hover {
+    background-color: #c1c1f7;  /* Lightens the button on hover */
+}
+
+/* Active (or "pressed") state for the custom button */
+.custom-btn:active {
+    transform: translate3d(7px, 7px, 0px);  /* Gives the impression the button is being pressed down */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Adjusts shadow to reflect the pressed state */
 }
