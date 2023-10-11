@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         setOpacity(0); // Start fade out
 
         setTimeout(() => { 
-            setCurrentWord(' ' + words[currentIndex]); // Adding space before the word
+            setCurrentWord(words[currentIndex]);
             currentIndex++;
 
             if (currentIndex === words.length) {
@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
                 </h1>
 
                 <h2 >
-                    My name is Lukas Reeves, I am a <span className="word">{currentWord}</span>
+                    My name is Lukas Reeves, I am a <span className="word" style={{ opacity: opacity, transition: 'opacity 1.5s' }}>{currentWord}</span>
                 </h2>
             </div>
 
