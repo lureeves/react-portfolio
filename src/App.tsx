@@ -14,7 +14,7 @@ function App() {
 
             <JokeGenerator /> 
 
-            <div id="about_me">
+            <div id="about-me">
                 {/* Content for About Me section */}
             </div>
             

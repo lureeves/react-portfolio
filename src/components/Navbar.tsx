@@ -3,7 +3,7 @@ import '../App.css';
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light" >
+        <nav className="navbar navbar-expand-lg navbar-light" >
             <div className="container-fluid">
 
                 {/* Brand (currently empty, could be used for a logo or brand name) */}
@@ -16,15 +16,15 @@ const Navbar: React.FC = () => {
 
                 {/* Navbar links */}
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul className="navbar-nav justify-content-between" style={{width: '35%'}}>
+                    <ul className="navbar-nav justify-content-between navbar-items" style={{width: '35%'}}>
                         <li className="nav-item">
-                            <a className="nav-link" href="pages/joke_generator.html">Joke Generator</a>
+                            <a className="nav-link" href="#joke-generator">Joke Generator</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="pages/about_me.html">About Me</a>
+                            <a className="nav-link" href="#about-me">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="pages/projects.html">Projects</a>
+                            <a className="nav-link" href="#project-section">Projects</a>
                         </li>
                     </ul>
                 </div>
