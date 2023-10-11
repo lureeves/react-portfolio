@@ -74,3 +74,15 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  /* Adjusts shadow to reflect the pressed state */
 }
 
+
+/* About Me */
+.custom-card {
+    background-color: #f3f3fe;
+    width: 75%;
+    padding: 20px; 
+    margin: 10px auto; 
+    display: block;
+    
+    /* The fading border effect */
+    box-shadow: 0 0 15px #5f5f70;
+}
