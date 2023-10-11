@@ -39,11 +39,11 @@ const HeroSection: React.FC = () => {
                 </h2>
             </div>
 
-            <a href="#project-section">
+            {/* <a href="#project-section">
                 <button className="custom-btn">
                     <span>Check out my projects</span>
                 </button>
-            </a>
+            </a> */}
         </section>
     );
 }

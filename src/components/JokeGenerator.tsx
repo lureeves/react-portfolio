@@ -20,8 +20,8 @@ const JokeGenerator: React.FC = () => {
     };
 
     return (
-        <div id="joke_generator" className="bg-light">
-            <button onClick={fetchJoke}>Generate Joke</button>
+        <div id="joke-generator" className="text-center my-5">
+            <button className="custom-btn my-5" onClick={fetchJoke}>Generate Joke</button>
             <p>{`Category: ${joke.category}`}</p>
             <p>{joke.setup}</p>
             <p>{joke.delivery}</p>

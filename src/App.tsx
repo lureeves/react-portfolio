@@ -12,13 +12,13 @@ function App() {
 
             <HeroSection />
 
-            <JokeGenerator /> 
-
             <div id="about-me">
                 {/* Content for About Me section */}
             </div>
             
             <ProjectSection />
+
+            <JokeGenerator /> 
 
             <Footer />
         </div>
