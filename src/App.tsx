@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import Footer from './components/Footer';
-import JokeGenerator from './components/JokeGenerator.tsx';
 import ProjectSection from './components/ProjectSection.tsx';
+import ContactMe from './components/ContactMe.tsx';
+import JokeGenerator from './components/JokeGenerator.tsx';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
             </div>
             
             <ProjectSection />
+
+            <ContactMe />
 
             <JokeGenerator /> 
 
