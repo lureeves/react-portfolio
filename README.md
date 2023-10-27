@@ -4,7 +4,7 @@ A portfolio website showcasing my personal projects and AI-powered tools using R
 
 🌐 View website: [lukasreeves.com](http://lukasreeves.com)
 
-![Project Screenshot](./Screenshot.png)
+![Project Screenshot](./public/images/Screenshot.png)
 
 ## ✨ Features
 
