@@ -20,11 +20,17 @@ const Navbar: React.FC = () => {
                         <li className="nav-item">
                             <a className="nav-link" href="#joke-generator">Joke Generator</a>
                         </li>
+
                         <li className="nav-item">
                             <a className="nav-link" href="#about-me">About Me</a>
                         </li>
+
                         <li className="nav-item">
                             <a className="nav-link" href="#project-section">Projects</a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link" href="#contact-me">Contact Me</a>
                         </li>
                     </ul>
                 </div>

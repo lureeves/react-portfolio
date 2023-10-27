@@ -6,6 +6,8 @@ import JokeGenerator from './components/JokeGenerator.tsx';
 import Footer from './components/Footer';
 import './App.css';
 
+// bun i @emailjs/browser
+
 function App() {
     return (
         <div className="App">
