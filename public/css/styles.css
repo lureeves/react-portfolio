@@ -133,6 +133,12 @@ h1 {
     display: block; /* Makes the anchor tag block-level, so it takes up the full space of the parent */
 }
 
+/* Contact Card Styling */
+.contact-card {
+    background-color: rgba(220, 220, 240, 0.774);
+    padding: 3rem;
+}
+
 
 /* Styles for the tooltip */
 .tooltip {

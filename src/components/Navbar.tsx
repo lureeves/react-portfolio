@@ -18,10 +18,6 @@ const Navbar: React.FC = () => {
                 <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul className="navbar-nav justify-content-between navbar-items" style={{width: '35%'}}>
                         <li className="nav-item">
-                            <a className="nav-link" href="#joke-generator">Joke Generator</a>
-                        </li>
-
-                        <li className="nav-item">
                             <a className="nav-link" href="#about-me">About Me</a>
                         </li>
 
@@ -31,6 +27,10 @@ const Navbar: React.FC = () => {
 
                         <li className="nav-item">
                             <a className="nav-link" href="#contact-me">Contact Me</a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a className="nav-link" href="#joke-generator">Joke Generator</a>
                         </li>
                     </ul>
                 </div>

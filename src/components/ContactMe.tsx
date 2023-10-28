@@ -21,7 +21,7 @@ const ContactMe = () => {
         <div className="container my-5" id="contact-me">
             <div className="row justify-content-center">
                 <div className="col-md-8">
-                    <div className="card shadow">
+                    <div className="contact-card shadow">
                         <div className="card-body">
                             <h2 className="text-center mb-4">Let's get in touch!</h2>
                             <form ref={form} onSubmit={sendEmail}>
