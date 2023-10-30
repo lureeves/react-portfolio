@@ -2,7 +2,8 @@
 
 A portfolio website showcasing my personal projects and AI-powered tools using React, TypeScript, and Vite. 🖥️
 
-🌐 View website: [lukasreeves.com](http://lukasreeves.com)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/caeeca2d-a019-49a4-877e-c0b0f720cb6a/deploy-status)](https://app.netlify.com/sites/lukas-reeves/deploys) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌐 View website: [lukas-reeves.netlify.app](http://lukas-reeves.netlify.app) 
 
 ![Project Screenshot](./public/images/Screenshot.png)
 
